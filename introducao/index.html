@@ -3,9 +3,16 @@
 		<title>Angular JS</title>
 		<meta charset="UTF-8" />
 	</head>
-	<body>
+	<body ng-app="app.introducao">
 
 		<h1>Primeira aplicação AngularJS</h1>
+
+		<div ng-controller="MeuController">
+			<!-- Tudo o que estiver aqui será controlado pelo MeuController -->
+			Olá {{nome}} {{sobrenome}}! Seja bem vindo!
+		</div>
+
+		Seu nome é {{pessoa.nome}}.
 
 		<script type="text/javascript" src="scripts/angular.min.js"></script>
 		<script type="text/javascript" src="scripts/app.js"></script>
